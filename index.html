@@ -7,13 +7,156 @@
   <link rel="stylesheet" href="style.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Montserrat', sans-serif;
+      background-color: #f0f0f0;
+      color: #333;
+      margin: 0;
+      padding: 0;
+    }
+
+    .container {
+      width: 85%;
+      margin: 0 auto;
+    }
+
+    header {
+      background-color: #4caf50;
+      padding: 40px 0;
+      text-align: center;
+      color: white;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2.5rem;
+    }
+
+    header p {
+      font-size: 1.2rem;
+    }
+
+    h2 {
+      margin-top: 40px;
+      font-size: 2rem;
+      color: #4caf50;
+      border-bottom: 2px solid #4caf50;
+      padding-bottom: 10px;
+    }
+
+    ul {
+      list-style-type: none;
+      padding: 0;
+    }
+
+    ul li {
+      padding: 8px 0;
+    }
+
+    ul li a {
+      text-decoration: none;
+      color: #4caf50;
+      transition: color 0.3s ease;
+    }
+
+    /* Dropdown Styles */
+    .dropdown {
+      background-color: #fff;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      margin-bottom: 20px;
+      overflow: hidden;
+      transition: all 0.3s ease;
+    }
+
+    .dropdown-btn {
+      width: 100%;
+      background-color: #ff6f61;
+      color: white;
+      padding: 15px 20px;
+      text-align: left;
+      font-size: 1.5rem;
+      font-weight: 600;
+      border: none;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    .dropdown-btn:hover {
+      background-color: #ff856d; /* Lighter coral on hover */
+    }
+
+    .dropdown-content {
+      display: none;
+      background-color: #fff;
+      border-top: 1px solid #e2e2e2;
+    }
+
+    .dropdown-content ul {
+      list-style-type: none;
+      padding: 20px;
+      margin: 0;
+    }
+
+    .dropdown-content ul li {
+      padding: 10px 0;
+      border-bottom: 1px solid #eaeaea;
+      font-size: 1.1rem;
+      color: #555;
+      cursor: pointer;
+      transition: color 0.3s ease;
+    }
+
+    .dropdown-content ul li:hover {
+      color: #ff6f61; /* Hover color for list items */
+    }
+
+    /* Dropdown Toggle Animation */
+    .dropdown.active .dropdown-content {
+      display: block;
+      animation: fadeIn 0.5s ease-in-out;
+    }
+
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+        transform: translateY(-10px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    /* Responsive Design */
+    @media (max-width: 768px) {
+      .dropdown-btn {
+        font-size: 1.2rem;
+        padding: 12px 15px;
+      }
+
+      .dropdown-content ul li {
+        font-size: 1rem;
+        padding: 8px 0;
+      }
+    }
+
+    footer {
+      background-color: #333;
+      color: white;
+      text-align: center;
+      padding: 20px 0;
+      margin-top: 40px;
+    }
+  </style>
 </head>
 <body>
   <header>
     <div class="container">
       <h1>Web Development & AI Learning Resources</h1>
       <p>Explore the best resources and GitHub repositories for mastering web development, AI, and prompt engineering.</p>
-      <p>The main Motive of the site is to get my Wife aka <b>Sheikh Firodus Fatima </b>  fell in love with Technology.</p>
+      <p>The main motive of the site is to get my Wife aka <b>Sheikh Firodus Fatima</b> to fall in love with Technology.</p>
     </div>
   </header>
 
@@ -42,6 +185,98 @@
     </div>
   </section>
 
+  <section id="python-questions">
+    <div class="container">
+      <h2>Python Coding Questions</h2>
+      <p>Challenge your Python coding skills with beginner-level exercises, organized by topics.</p>
+
+      <!-- Basics Dropdown -->
+      <div class="dropdown">
+        <button class="dropdown-btn">Python Basics (20 Coding Questions)</button>
+        <div class="dropdown-content">
+          <ul>
+            <li>1. Write a program to print "Hello, World!".</li>
+            <li>2. Write a Python program to swap two numbers.</li>
+            <li>3. Write a program to check if a number is even or odd.</li>
+            <li>4. Write a program to find the largest of three numbers.</li>
+            <li>5. Write a program to calculate the area of a circle.</li>
+            <li>6. Write a program to reverse a string.</li>
+            <li>7. Write a Python program to print the Fibonacci sequence.</li>
+            <li>8. Write a Python program to check if a string is a palindrome.</li>
+            <li>9. Write a program to find the sum of digits of a number.</li>
+            <li>10. Write a Python program to find the factorial of a number.</li>
+            <li>11. Write a program to count the number of vowels in a string.</li>
+            <li>12. Write a program to convert Fahrenheit to Celsius.</li>
+            <li>13. Write a Python program to find the GCD of two numbers.</li>
+            <li>14. Write a program to check if a number is prime.</li>
+            <li>15. Write a Python program to find the square root of a number without using the math library.</li>
+            <li>16. Write a Python program to calculate the sum of natural numbers up to n.</li>
+            <li>17. Write a program to print the ASCII value of a character.</li>
+            <li>18. Write a Python program to remove punctuation from a string.</li>
+            <li>19. Write a Python program to check if a number is an Armstrong number.</li>
+            <li>20. Write a Python program to check whether a string is an anagram or not.</li>
+          </ul>
+        </div>
+      </div>
+      <div class="dropdown">
+        <button class="dropdown-btn">Python Loop Questions (20 Questions)</button>
+        <div class="dropdown-content">
+            <ul>
+                <li>1. Write a program to print numbers from 1 to 100 using a for loop.</li>
+                <li>2. Write a program to print the even numbers between 1 and 50 using a while loop.</li>
+                <li>3. Write a program to find the sum of all numbers from 1 to 100 using a for loop.</li>
+                <li>4. Write a program to print the multiplication table of a given number using a for loop.</li>
+                <li>5. Write a program to print the first 10 Fibonacci numbers using a while loop.</li>
+                <li>6. Write a program to count the number of digits in a given number using a while loop.</li>
+                <li>7. Write a program to print a triangle of stars using nested loops.</li>
+                <li>8. Write a program to find the factorial of a number using a for loop.</li>
+                <li>9. Write a program to reverse a given string using a for loop.</li>
+                <li>10. Write a program to check if a number is prime by looping through possible divisors.</li>
+                <li>11. Write a program to find the greatest common divisor (GCD) of two numbers using a loop.</li>
+                <li>12. Write a program to print all the factors of a given number using a for loop.</li>
+                <li>13. Write a program to print the sum of all odd numbers from 1 to 100 using a while loop.</li>
+                <li>14. Write a program to print a pyramid of numbers using nested loops.</li>
+                <li>15. Write a program to find the largest number in a list using a loop.</li>
+                <li>16. Write a program to print the digits of a number in reverse order using a while loop.</li>
+                <li>17. Write a program to check if a string is a palindrome using a loop.</li>
+                <li>18. Write a program to print the first n squares of natural numbers using a for loop.</li>
+                <li>19. Write a program to count the number of vowels in a given string using a loop.</li>
+                <li>20. Write a program to create a multiplication table using a nested loop.</li>
+            </ul>
+        </div>
+      </div>
+      <div class="dropdown">
+        <button class="dropdown-btn">Python Functions Questions (20 Questions)</button>
+        <div class="dropdown-content">
+            <ul>
+                <li>1. Write a function to calculate the factorial of a number.</li>
+                <li>2. Write a function to check if a given number is prime.</li>
+                <li>3. Write a function that takes a string and returns it reversed.</li>
+                <li>4. Write a function to find the maximum value in a list.</li>
+                <li>5. Write a function to calculate the sum of all even numbers in a list.</li>
+                <li>6. Write a function that takes a list and returns a new list with duplicates removed.</li>
+                <li>7. Write a function to convert a temperature from Celsius to Fahrenheit.</li>
+                <li>8. Write a function to check if a string is a palindrome.</li>
+                <li>9. Write a function to count the number of vowels in a given string.</li>
+                <li>10. Write a function to calculate the area of a rectangle given its length and width.</li>
+                <li>11. Write a function that returns the nth Fibonacci number.</li>
+                <li>12. Write a function to sort a list of numbers in ascending order.</li>
+                <li>13. Write a function that takes a number and returns its binary representation as a string.</li>
+                <li>14. Write a function to find the GCD (Greatest Common Divisor) of two numbers.</li>
+                <li>15. Write a function to generate a list of prime numbers up to a given limit.</li>
+                <li>16. Write a function that takes a list of strings and returns the longest string.</li>
+                <li>17. Write a function to calculate the sum of the digits of a number.</li>
+                <li>18. Write a function to check if two strings are anagrams of each other.</li>
+                <li>19. Write a function to merge two dictionaries into one.</li>
+                <li>20. Write a function that takes a number and returns whether it is a perfect square.</li>
+            </ul>
+        </div>
+      </div>
+
+      <!-- Additional dropdowns for conditionals, loops, and functions can be added similarly... -->
+    </div>
+  </section>
+
   <!-- HTML/CSS Resources -->
   <section id="htmlcss">
     <div class="container">
@@ -59,131 +294,8 @@
           <h3>HTML/CSS Learning Resources</h3>
           <ul>
             <li><a href="https://developer.mozilla.org/en-US/docs/Web/HTML" target="_blank">MDN Web Docs - HTML</a></li>
-            <li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS" target="_blank">MDN Web Docs - CSS</a></li>
-            <li><a href="https://www.w3schools.com/html/" target="_blank">W3Schools HTML/CSS</a></li>
-          </ul>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- JavaScript Resources -->
-  <section id="javascript">
-    <div class="container">
-      <h2>JavaScript Resources</h2>
-      <div class="resource-list">
-        <div class="resource">
-          <h3>JavaScript GitHub Repositories</h3>
-          <ul>
-            <li><a href="https://github.com/getify/You-Dont-Know-JS" target="_blank">You Don’t Know JS</a></li>
-            <li><a href="https://github.com/30-seconds/30-seconds-of-code" target="_blank">30 Seconds of Code</a></li>
-            <li><a href="https://github.com/airbnb/javascript" target="_blank">Airbnb JavaScript Style Guide</a></li>
-          </ul>
-        </div>
-        <div class="resource">
-          <h3>JavaScript Learning Resources</h3>
-          <ul>
-            <li><a href="https://javascript.info/" target="_blank">JavaScript.info</a></li>
-            <li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank">MDN Web Docs - JavaScript</a></li>
-            <li><a href="https://www.w3schools.com/js/" target="_blank">W3Schools JavaScript</a></li>
-          </ul>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Django Resources -->
-  <section id="django">
-    <div class="container">
-      <h2>Django Resources</h2>
-      <div class="resource-list">
-        <div class="resource">
-          <h3>Django GitHub Repositories</h3>
-          <ul>
-            <li><a href="https://github.com/django/django" target="_blank">Django Repository</a></li>
-            <li><a href="https://github.com/pydanny/cookiecutter-django" target="_blank">Cookiecutter Django</a></li>
-            <li><a href="https://github.com/justdjango/justdjango.com" target="_blank">Just Django</a></li>
-          </ul>
-        </div>
-        <div class="resource">
-          <h3>Django Learning Resources</h3>
-          <ul>
-            <li><a href="https://docs.djangoproject.com/en/stable/" target="_blank">Django Documentation</a></li>
-            <li><a href="https://djangoforbeginners.com/" target="_blank">Django for Beginners</a></li>
-            <li><a href="https://www.djangoproject.com/start/" target="_blank">Official Django Start Guide</a></li>
-          </ul>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- AI & Prompt Engineering -->
-  <section id="ai">
-    <div class="container">
-      <h2>AI & Prompt Engineering</h2>
-      <div class="resource-list">
-        <div class="resource">
-          <h3>AI GitHub Repositories</h3>
-          <ul>
-            <li><a href="https://github.com/huggingface/transformers" target="_blank">Hugging Face Transformers</a></li>
-            <li><a href="https://github.com/mlflow/mlflow" target="_blank">MLFlow</a></li>
-            <li><a href="https://github.com/microsoft/DeepSpeed" target="_blank">DeepSpeed</a></li>
-          </ul>
-        </div>
-        <div class="resource">
-          <h3>Prompt Engineering Resources</h3>
-          <ul>
-            <li><a href="https://github.com/f/awesome-chatgpt-prompts" target="_blank">Awesome GPT Prompts</a></li>
-            <li><a href="https://github.com/gpt3demo/awesome-gpt3" target="_blank">Awesome GPT-3</a></li>
-          </ul>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Images/Illustrations -->
-  <section id="images">
-    <div class="container">
-      <h2>Images & Illustrations Resources</h2>
-      <div class="resource-list">
-        <div class="resource">
-          <ul>
-            <li><a href="https://unsplash.com/" target="_blank">Unsplash</a></li>
-            <li><a href="https://www.pexels.com/" target="_blank">Pexels</a></li>
-            <li><a href="https://pixabay.com/" target="_blank">Pixabay</a></li>
-            <li><a href="https://undraw.co/" target="_blank">unDraw (Illustrations)</a></li>
-          </ul>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Coding Practice -->
-  <section id="coding">
-    <div class="container">
-      <h2>Coding Practice Sites</h2>
-      <div class="resource-list">
-        <div class="resource">
-          <ul>
-            <li><a href="https://www.hackerrank.com/" target="_blank">HackerRank</a></li>
-            <li><a href="https://www.codewars.com/" target="_blank">Codewars</a></li>
-            <li><a href="https://leetcode.com/" target="_blank">LeetCode</a></li>
-          </ul>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Technology News Blogs -->
-  <section id="blogs">
-    <div class="container">
-      <h2>Blogs & Technology News</h2>
-      <div class="resource-list">
-        <div class="resource">
-          <ul>
-            <li><a href="https://www.techcrunch.com/" target="_blank">TechCrunch</a></li>
-            <li><a href="https://www.wired.com/" target="_blank">Wired</a></li>
-            <li><a href="https://thenextweb.com/" target="_blank">The Next Web</a></li>
+            <li><a href="https://www.w3schools.com/css/" target="_blank">W3Schools - CSS</a></li>
+            <li><a href="https://css-tricks.com/" target="_blank">CSS-Tricks</a></li>
           </ul>
         </div>
       </div>
@@ -195,5 +307,28 @@
       <p>Developed by Faizal Imam | All rights reserved &copy; 2024</p>
     </div>
   </footer>
+
+  <script>
+    // Select all dropdown buttons
+    const dropdownButtons = document.querySelectorAll('.dropdown-btn');
+
+    // Add click event to each button
+    dropdownButtons.forEach(button => {
+      button.addEventListener('click', function() {
+        // Toggle the active class on the current dropdown
+        this.classList.toggle('active');
+        
+        // Select the next sibling, which is the dropdown content
+        const dropdownContent = this.nextElementSibling;
+        
+        // Toggle the display of the content
+        if (dropdownContent.style.display === 'block') {
+          dropdownContent.style.display = 'none';
+        } else {
+          dropdownContent.style.display = 'block';
+        }
+      });
+    });
+  </script>
 </body>
 </html>
